@@ -19,9 +19,8 @@ namespace MyTests
             catch (std::bad_alloc&) {
                 Assert::IsTrue(true);
             }
-            catch (...) {
-                Assert::Fail();
-            }
+
+            Assert::Fail();
 
         }
     };
